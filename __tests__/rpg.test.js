@@ -1,4 +1,5 @@
-import Character from './../src/rpg.js';
+import { Character } from './../src/rpg.js';
+import { Level } from './../src/rpg.js';
 
 describe('Character', () => {
   let warrior;
@@ -21,4 +22,14 @@ describe('Character', () => {
     expect(warrior.grabSword()).toEqual(100);
   });
   
+});
+
+describe('Level', () => {
+  
+  test('Should create a level object with properties of distance, enemy, and loot', () => {
+    let firstLevel = new Level(10,"skeleton", "boots")
+    expect(firstLevel.distance).toEqual(10);
+    expect(firstLevel.enemy).toEqual("skeleton");
+    expect(firstLevel.loot).toEqual("boots");
+  });
 });

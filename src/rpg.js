@@ -1,4 +1,4 @@
-export default class Character {
+export class Character {
   constructor(health, stamina, damage) {
     this.health = health;
     this.stamina = stamina;
@@ -19,13 +19,10 @@ export default class Character {
   
 }
 
-
-
-
-
-
-// if(this.inventory[items] === 'sword') {
-//   this.inventory.push(items);
-//   return this.damage += 25;
-// }
-// return this.inventory;
+export class Level {
+  constructor(distance, enemy, loot) {
+    this.distance = distance;
+    this.enemy = enemy;
+    this.loot = loot;
+  }
+}
