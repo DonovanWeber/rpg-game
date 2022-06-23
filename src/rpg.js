@@ -4,8 +4,12 @@ export default class Character {
     this.stamina = stamina;
     this.damage = damage;
   }
-  drinkPotion() { () => { 
-  };
-  return this.health += 50;
+  drinkPotion() { 
+    return this.health += 50;
+  }
+  itemSlot() { 
+    return this.inventory = [];
+    
   }
 }
+

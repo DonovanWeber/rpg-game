@@ -13,5 +13,8 @@ describe('Character', () => {
   test('should increase characters health by 50', () => {
     expect(warrior.drinkPotion()).toEqual(150);
   });
-
+  test('should add an inventory slot inside of the character object', () =>
+  {
+    expect(warrior.itemSlot()).toEqual([]);
+  });
 });
