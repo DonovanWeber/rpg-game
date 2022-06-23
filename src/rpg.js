@@ -17,7 +17,12 @@ export class Character {
     return this.damage += 25;
   }   
   
+  runToLevel() { 
+    return this.level = 0;
+
+  }
 }
+
 
 export class Level {
   constructor(distance, enemy, loot) {
@@ -25,4 +30,13 @@ export class Level {
     this.enemy = enemy;
     this.loot = loot;
   }
+
 }
+
+
+
+
+
+// need to move the char from 0 to 1
+//method to move the char
+// to subtract distance from stamina

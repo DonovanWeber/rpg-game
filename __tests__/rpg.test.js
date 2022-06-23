@@ -21,15 +21,24 @@ describe('Character', () => {
   test('should add a sword to inventory character and increase damage by 25', () => {
     expect(warrior.grabSword()).toEqual(100);
   });
+  test('should add a location property to the character', () => {
+    expect(warrior.runToLevel()).toEqual(0);
+  });
   
 });
 
 describe('Level', () => {
   
   test('Should create a level object with properties of distance, enemy, and loot', () => {
-    let firstLevel = new Level(10,"skeleton", "boots")
+    let firstLevel = new Level(10,"skeleton", "boots");
     expect(firstLevel.distance).toEqual(10);
     expect(firstLevel.enemy).toEqual("skeleton");
     expect(firstLevel.loot).toEqual("boots");
   });
+  
 });
+
+// let warrior = new Character(150,50,100);
+// let firstLevel = new Level(10,"skeleton", "boots");
+// test('should have character go to first level', () => {
+//   expect(warrior.stamina).toEqual(firstLevel.distance);
