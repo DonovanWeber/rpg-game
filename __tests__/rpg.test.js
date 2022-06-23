@@ -27,6 +27,9 @@ describe('Character', () => {
   test('should change the characters location to level 1', () => {
     expect(warrior.runToLevel()).toEqual(1);
   });
+  test('should change the characters stats stamina on what level they move to',() => {
+    expect(warrior.firstLevel()).toEqual(40);
+  });
   
 });
 

@@ -26,8 +26,18 @@ export class Character {
     this.level += 1;
     return this.level;
   }
-}
 
+  firstLevel() {
+    this.runToLevel();
+    const levelOne = new Level(10,'skeleton','boots');
+    if (this.level === 1) {
+      this.stamina -= levelOne.distance;
+      return this.stamina;
+    } else {
+
+    }
+  }
+}
 
 export class Level {
   constructor(distance, enemy, loot) {
@@ -37,7 +47,6 @@ export class Level {
   }
 
 }
-
 
 
 
