@@ -17,4 +17,8 @@ describe('Character', () => {
   {
     expect(warrior.itemSlot()).toEqual([]);
   });
+  test('should add an item to inventory character', () => {
+    expect(warrior.grabItem()).toEqual(1);
+   
+  });
 });
