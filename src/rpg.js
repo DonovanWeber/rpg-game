@@ -17,9 +17,14 @@ export class Character {
     return this.damage += 25;
   }   
   
-  runToLevel() { 
-    return this.level = 0;
-
+  addLevel() { 
+    this.level = 0;
+    return this.level;
+  }
+  runToLevel() {
+    this.addLevel();
+    this.level += 1;
+    return this.level;
   }
 }
 

@@ -22,7 +22,10 @@ describe('Character', () => {
     expect(warrior.grabSword()).toEqual(100);
   });
   test('should add a location property to the character', () => {
-    expect(warrior.runToLevel()).toEqual(0);
+    expect(warrior.addLevel()).toEqual(0);
+  });
+  test('should change the characters location to level 1', () => {
+    expect(warrior.runToLevel()).toEqual(1);
   });
   
 });
