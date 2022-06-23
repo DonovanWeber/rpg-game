@@ -10,13 +10,17 @@ export default class Character {
   itemSlot() { 
     return this.inventory = [];
   }
-  grabItem() { 
+  grabSword() { 
     this.itemSlot();
     const item = 'sword';
-    return this.inventory.push(item); //instead of the return here 
-    // return this.inventory ??
+    this.inventory.push(item);
+    return this.damage += 25;
   }   
+  
 }
+
+
+
 
 
 
